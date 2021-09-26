@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>airpods i12</title>
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./img/icon.png">
+
+	<link rel="stylesheet"
+	href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+	integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
+	crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+	integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+      img.highlighted {
+    border: 2px solid blue;
+}
+  </style>
+</head>
+<body class="code">
+    <div class="header-des">
+        <h6>التوصيل مجاني</h6>
+      </div>
+     <!-- navs  -->
+     <navbar class="navbar navbar-expand-md fixed-top navbar-shrink">
+        <div class="container" style="justify-content: center !important;">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-size"  alt="" /></a>
+        </div>
+      </navbar>
+      <!-- navs  -->
+	<div class="container" style="margin-top: 110px;">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="title-info">
+					<h4 class="text-center"><a href="#"> المرجو ملأ الاستمارة لإتمام الطلب </a></h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 mb-4">
+				<div class="img-zoom">
+					<img src="./img/product/airpods1.jpg" class="img" id="expandedImg"  alt="Nature"   onload="this.parentElement.style.display='block'" > 
+				  </div>
+				  <div class="container-img"  id="select-form" >
+					<img src="./img/product/airpods1.jpg"  alt="Nature" data-value="image_value" id="img1" onclick="myFunction(this)">
+					<img src="./img/product/airpods3 (1).jpg"  alt="Nature" data-value="image_value1"  onclick="myFunction(this)">
+					<img src="./img/product/airpods3.jpg"  alt="Nature" data-value="image_value2" onclick="myFunction(this)">
+					<img src="./img/product/airpods4.jfif"  alt="Nature" data-value="image_value3" onclick="myFunction(this)">
+                    <input type="hidden" id="image-value" name="selected_image" value="">
+				  </div>
+			</div>
+			
+            <div class="col-lg-6">
+                <div class="clients-info" id="info">
+                    <h3> I12 TWS سماعات لاسلكية قابلة للتحكم باللمس</h3>
+                    <h5>249 درهم <strike>320 درهم</strike> <span class="badge badge-info">solde</span></h5>
+                    <form id="sendInfo" >
+                        <div class="row form-style">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="name">الاسم الكامل</label>
+                                    <input type="text" name="entry.1370586181" class="form-control" id="name" required
+                                        placeholder="أدخل اسمك هنا">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <label for="name">الهاتف</label>
+                                    <input type="text" name="entry.2013666034" class="form-control" id="tel" required
+                                        placeholder="أدخل رقمك الهاتفي">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <label for="name">العنوان</label>
+                                    <input type="text" name="entry.1115583002" class="form-control" id="address"
+                                        required placeholder="أدخل عنوان المنزل">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <label for="name">المدينة</label>
+                                    <input type="text" name="entry.1455828323" class="form-control" id="city" required
+                                        placeholder="أدخل مدينتك هنا">
+                                </div>
+                            </div>
+
+                            <input type="hidden" value="airpodsi12" id="productfield" name="entry.955169782">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <label for="name">الكمية</label>
+                                    <input type="number" value="1" name="entry.765858297" class="form-control" id="qtefield" required
+                                        placeholder="أدخل الكمية هنا">
+                                </div>
+                            </div>
+
+                            <input type="hidden" value="249" id="pricefield" name="entry.1848777038">
+
+                            <input type="hidden" value="recu" id="etat" name="entry.2095923629">
+
+                            <button class="btn btn-success btn-home btn-block mx-3" type="submit">ارسال الطلب</button>
+
+                        </div>
+                    </form>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="confirmPurchase" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">شكرا على الطلب</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    لقد تم التوصل بطلبكم
+                                    سيتصل بكم أحد عملائنا للتأكيد
+                                </div>
+                                <div class="modal-footer">
+
+                                    <a href="index.html" class="btn btn-success">رجوع</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-8">
+			<div class="product-desc">
+				<h4 class="mb-4">مواصفات المنتوج</h4>
+
+				<p class="text-muted">- يدعم بلوتوت 5.0.</p>
+				<p class="text-muted">-  سرعة تحكم عالية.  .</p>
+				<p class="text-muted">- تتوفر على تقنية اللمس الذكي. </p>
+				<p class="text-muted">-  قم بإزالة سماعة الرأس وإقرانها تلقائيًا مع هاتف آخر متصل بالبلوتوت.</p>
+				<p class="text-muted">- علبة شحن لاسلكية ،تسهل عملية الشحن.</p>
+				<p class="text-muted">-تتوافق مع جميع أجهزة أندرويد و أبل.</p>
+			</div>
+
+            <img src="./img/product/cash.png" class="img-fluid" alt="">
+		</div>
+	</div>
+	</div>
+
+    <!-- footer  -->
+    <!-- Footer -->
+    <footer>
+        <hr>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://shoppingonline98.com/"> shoppingonline98.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- footer  -->
+
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+<script
+src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
+integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
+crossorigin="anonymous"></script> 
+	<script src="/js/script.js"></script>
+
+    <script>
+    const infoForm = document.querySelector("#sendInfo")
+    const name = document.querySelector('#name')
+    const tel = document.querySelector('#tel')
+    const address = document.querySelector('#address')
+    const city = document.querySelector('#city')
+    const product = document.querySelector('#productfield')
+    const etat = document.querySelector('#etat')
+    const prix = document.querySelector("#pricefield")
+    const qte = document.querySelector("#qtefield")
+    infoForm.addEventListener('submit', function (e) {
+      e.preventDefault()
+      if (name.value !== "" && tel.value !== "" && address.value !== "" && city.value !== "") { 
+        sendData()
+        $("#confirmPurchase").modal()
+        infoForm.reset()
+        fbq('track', 'Purchase');
+      }
+    })
+    function sendData() {
+      const data =
+        $.ajax({
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfACDQ3Lo5oEnTVAQUgI8bbJnXjc9kAQm5A0Tr_g3CSvjBgUQ/formResponse",
+          data: {
+            "entry.765858297": qte.value, 
+            "entry.955169782": product.value, 
+            "entry.1848777038": prix.value,
+            "entry.2095923629": etat.value,
+            "entry.1370586181": name.value,
+            "entry.2013666034": tel.value,
+            "entry.1115583002": address.value,
+            "entry.1455828323": city.value,
+          },
+          type: 'POST',
+          crossDomain: true,
+          dataType: 'jsonp'
+        });
+    }
+    </script>
+</body>
+</html>
